@@ -7,12 +7,6 @@
       "phone": "7845784512"
     },
     {
-      "id": "3",
-      "name": "Pal",
-      "place": "USA",
-      "phone": "7845784512"
-    },
-    {
       "id": "4",
       "name": "Surender",
       "place": "Delhi",
@@ -27,8 +21,20 @@
     {
       "id": "3",
       "name": "Gautam Dheer",
+      "place": "New ",
+      "phone": "78"
+    },
+    {
+      "id": "3",
+      "name": "lites",
       "place": "New Delhi",
       "phone": "7845784578"
+    },
+    {
+      "id": "3",
+      "name": "Kamal",
+      "place": "Dubla",
+      "phone": "7845784579"
     }
   ]
 }

@@ -16,7 +16,7 @@ export default function EditStudent() {
 
   useEffect(() => {
     // fetch the existing student once when component mounts (or when id changes)
-    fetch("/students" + studentid)
+    fetch("http://localhost:8000/students/" + studentid)
       .then((res) => res.json())
       .then((data) => {
         if (data) {
@@ -33,7 +33,7 @@ export default function EditStudent() {
     e.preventDefault();
     const studentData = { id, name, place, phone };
     console.log(studentData);
-    fetch("/students" + studentid, {
+    fetch("http://localhost:8000/students/" + studentid, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-// import "./styles/create-student.css";
+import "./styles/create-student.css";
 
 export default function CreateStudent() {
   const [id, setId] = useState("");
@@ -14,10 +14,10 @@ export default function CreateStudent() {
     e.preventDefault();
     const studentData = { id, name, place, phone };
     console.log(studentData);
-    fetch("/students", {
+    fetch("http://localhost:8000/students", {
       method: "POST",
-      header: {
-        "content-type": "application/json",
+      headers: {
+        "Content-Type": "application/json",
       },
       body: JSON.stringify(studentData),
     })
@@ -82,13 +82,12 @@ export default function CreateStudent() {
          {phone.length === 0 && validation && (
           <span className="errorMsg">Please Enter the phone</span>
         )}
-          <div style={{marginTop:15, display:'flex', justifyContent:'start', alignItems:'center'}}>
+          <div style={{marginTop:15, display:'flex', justifyContent:'start', alignItems:'center'}}></div>
           <button className="btn btn-save">Save</button>
 
           <Link to="/" className="btn btn-back">
             Back
           </Link>
-          </div>
 
         <div>
         
