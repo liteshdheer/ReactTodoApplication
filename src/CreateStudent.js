@@ -14,7 +14,7 @@ export default function CreateStudent() {
     e.preventDefault();
     const studentData = { id, name, place, phone };
     console.log(studentData);
-    fetch("http://localhost:8000/students", {
+    fetch("/students", {
       method: "POST",
       header: {
         "content-type": "application/json",

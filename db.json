@@ -1,12 +1,6 @@
 {
   "students": [
     {
-      "id": "1",
-      "name": "Litesh",
-      "place": "New delhi",
-      "phone": "9716454578"
-    },
-    {
       "id": "2",
       "name": "Gautan",
       "place": "Lajpat Nagar",
@@ -27,8 +21,14 @@
     {
       "id": "5",
       "name": "Kumar",
-      "place": "Palam",
+      "place": "Palam Test",
       "phone": "6598747457"
+    },
+    {
+      "id": "3",
+      "name": "Gautam Dheer",
+      "place": "New Delhi",
+      "phone": "7845784578"
     }
   ]
 }

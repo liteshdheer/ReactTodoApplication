@@ -14,7 +14,7 @@ export default function StudentTable() {
   }
   const deleteDetails=(id)=>{
     if(window.confirm("Are you sure to delete the student data? ")){
-    fetch("http://localhost:8000/students/" + id, {
+    fetch("/students/" + id, {
       method: "DELETE",
      
     })
@@ -28,7 +28,7 @@ export default function StudentTable() {
   }
 
   useEffect(() => {
-    fetch("http://localhost:8000/students")
+    fetch("/students")
       .then((res) => res.json())
       .then((data) => 
        setStudents(data))
