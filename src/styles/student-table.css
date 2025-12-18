@@ -1,0 +1,31 @@
+/* Student Table specific styles - polished look */
+.container h2{
+  margin:0 0 18px 0;
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto;
+  font-size:1.6rem;
+  letter-spacing:0.2px;
+}
+
+.table-container{background:transparent}
+.table{background:linear-gradient(180deg, #ffffff, #fbfdff);border-radius:12px;overflow:hidden;border:1px solid #eef4ff}
+.table thead th{padding:14px 12px;border-bottom:none;color:#475569;font-weight:700}
+.table tbody tr{transition:background .15s ease, transform .08s ease}
+.table tbody tr:nth-child(even) td{background:#fbfdff}
+.table tbody tr:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(15,23,42,0.06)}
+.table td{padding:12px 14px;vertical-align:middle}
+
+.actions .btn{padding:8px 10px;border-radius:8px}
+.btn-info{background:linear-gradient(90deg,#06b6d4,#0ea5e9);box-shadow:0 6px 18px rgba(14,169,231,0.12)}
+.btn-warning{background:linear-gradient(90deg,#f59e0b,#f97316);color:#fff}
+.btn-danger{background:linear-gradient(90deg,#ef4444,#dc2626);color:#fff}
+
+.search-bar{margin-bottom:14px}
+.search-input{min-width:220px}
+
+.add-cta{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:10px;font-weight:700}
+
+@media (max-width:720px){
+  .table thead{display:none}
+  .table tbody td{display:block;padding:10px}
+  .table tbody tr{margin-bottom:10px;border-radius:8px;background:#fff;border:1px solid #eef2f7}
+}

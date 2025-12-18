@@ -1,0 +1,34 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "Litesh",
+      "place": "New delhi",
+      "phone": "9716454578"
+    },
+    {
+      "id": "2",
+      "name": "Gautan",
+      "place": "Lajpat Nagar",
+      "phone": "7845784512"
+    },
+    {
+      "id": "3",
+      "name": "Pal",
+      "place": "USA",
+      "phone": "7845784512"
+    },
+    {
+      "id": "4",
+      "name": "Surender",
+      "place": "Delhi",
+      "phone": "6598457812"
+    },
+    {
+      "id": "5",
+      "name": "Kumar",
+      "place": "Palam",
+      "phone": "6598747457"
+    }
+  ]
+}
